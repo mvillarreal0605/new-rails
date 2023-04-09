@@ -8,10 +8,12 @@ export default class extends Controller {
 
     new Typed(this.element, {
       strings: [
-        'Bootstrap alread installed',
-        'Front end already set up',
-        'Ready to roll',
-        'JS already configured'
+        'Bootstrap',
+        'SCSS',
+        'Stimulus JS',
+        'Import Maps',
+        'Rails 7.0.4',
+        'Ruby 3.1.2'
       ],
       typeSpeed: 50,
       loop: true
