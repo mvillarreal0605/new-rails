@@ -11,8 +11,8 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= render "shared/navbar" %>
+  <body data-bs-spy='scroll' data-bs-target='#navId' tabindex='0'>
+    <%= render 'shared/navbar' %>
     <%= yield %>
   </body>
 </html>
