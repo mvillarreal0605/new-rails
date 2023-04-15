@@ -1,73 +1,79 @@
-<div class='gallery'>
-  <div class='card'>
-    <%= image_tag 'https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg', alt: 'breakfast image' %>
-    <div class='info'>
-    <h1>Breakfast</h1>
-    <p>Bla bla Breakfast content. Talking about breakfast... Oh how great is breakfast. I love breakfast.</p>
-    <a href='#' class='btn btn-flat'>More on breakfast</a>
-    </div>
-  </div>
+<div class='gallery d-flex flx-column'>
+  <p class='col-10'>Here are some of my favorite foods from Uruguay. Not necessarily the most typical Uruguayan foods, just what I like and have on a regular basis. The links will take you to my favorite brands/spots for each type.</p>
 
-  <div class='card'>
-    <%= image_tag 'https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg', alt: 'lunch image' %>
-    <div class='info'>
-    <h1>Lunch</h1>
-    <p>Same for lunch, who doesn't love lunch? Lunch is great. Bla bla. Lunch this, lunch that. This should be plenty on lunch.</p>
-    <%= link_to  'More on lunch', '#', class: 'btn btn-flat' %>
-    </div>
-  </div>
+  <br>
 
-  <div class='card'>
-    <%= image_tag 'https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg', alt: 'dinner image' %>
-    <div class='info'>
-    <h1>Dinner</h1>
-    <p>You guessed it.. Bla bla bla dinnner, bla dinner bla. Winner winner, chicken dinner. This concludes the dinner content.</p>
-    <%= link_to  'More on dinner', '#', class: 'btn btn-flat' %>
+  <div class='d-flex flex-wrap justify-content-between'>
+    <div class='card col-3'>
+      <%= image_tag 'https://images.unsplash.com/photo-1624128082319-2210acebc3c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGVtcGFuYWRhc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', alt: 'empanadas image' %>
+      <div class='info'>
+      <h1>Empanadas</h1>
+      <p>Plenty of great places to order empanadas from. I'm not personally a fan of olives, and there's a lot of olives in everything here, so I always have to confirm before ordering. Of course I prefer them fried.</p>
+      <%= link_to  'Lokotas', 'http://lokotas.com.uy/', target: '_blank', class: 'btn btn-flat' %>
+      </div>
     </div>
-  </div>
 
-  <div class='card'>
-    <%= image_tag 'https://images.unsplash.com/photo-1624128082319-2210acebc3c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGVtcGFuYWRhc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', alt: 'dinner image' %>
-    <div class='info'>
-    <h1>Empanadas</h1>
-    <p>You guessed it.. Bla bla bla dinnner, bla dinner bla. Winner winner, chicken dinner. This concludes the dinner content.</p>
-    <%= link_to  'More on dinner', '#', class: 'btn btn-flat' %>
+    <div class='card col-3'>
+      <%= image_tag 'https://images.unsplash.com/photo-1592134073632-f38ffeef9ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJicXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', alt: 'parilla image' %>
+      <div class='info'>
+      <h1>Parilla</h1>
+      <p>The steak here is premium, and amazing. There are a lot of parillas (grills) here that cook beef in traditional Uruguayan fashion, smoking the meat and flavoring it to perfection.</p>
+      <%= link_to  'La Pulpería', 'https://www.instagram.com/lapulperiaparrillada/', target: '_blank', class: 'btn btn-flat' %>
+      </div>
     </div>
-  </div>
 
-  <div class='card'>
-    <%= image_tag 'https://images.unsplash.com/photo-1579887829494-5b736888265a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9rZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', alt: 'dinner image' %>
-    <div class='info'>
-    <h1>Poke</h1>
-    <p>You guessed it.. Bla bla bla dinnner, bla dinner bla. Winner winner, chicken dinner. This concludes the dinner content.</p>
-    <%= link_to  'More on dinner', '#', class: 'btn btn-flat' %>
+    <div class='card col-3'>
+      <%= image_tag 'https://images.unsplash.com/photo-1618667060775-1fe102237f94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80', alt: 'medialunas image' %>
+      <div class='info'>
+      <h1>Medialunas</h1>
+      <p>Just croissants really, but there are bakeries all over Montevideo that make really good ones. There's a really popular bakery right around the corner from my apartment where I stop by on a weekly basis.</p>
+      <%= link_to  'Medialunas Calentitas', 'https://www.instagram.com/medialunascalentitas21/?utm_medium=copy_link', target: '_blank', class: 'btn btn-flat' %>
+      </div>
     </div>
-  </div>
 
-  <div class='card'>
-    <%= image_tag 'https://images.unsplash.com/photo-1592134073632-f38ffeef9ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJicXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', alt: 'dinner image' %>
-    <div class='info'>
-    <h1>Asado</h1>
-    <p>You guessed it.. Bla bla bla dinnner, bla dinner bla. Winner winner, chicken dinner. This concludes the dinner content.</p>
-    <%= link_to  'More on dinner', '#', class: 'btn btn-flat' %>
+    <div class='card col-3'>
+      <%= image_tag 'https://images.unsplash.com/photo-1547151100-830d1991a064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80', alt: 'wine image' %>
+      <div class='info'>
+      <h1>Wine</h1>
+      <p>This whole region of South America is known for its wine. Uruguay specifically is known for Tannat. Luckily good, affordable wine is well within reach here.</p>
+      <%= link_to  'Don Pascual', 'https://juanico.com/don-pascual-todos-nuestros-vinos/', target: '_blank', class: 'btn btn-flat' %>
+      </div>
     </div>
-  </div>
 
-  <div class='card'>
-    <%= image_tag 'https://images.unsplash.com/photo-1543773495-2cd9248a5bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN3ZWV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', alt: 'dinner image' %>
-    <div class='info'>
-    <h1>Masitas</h1>
-    <p>You guessed it.. Bla bla bla dinnner, bla dinner bla. Winner winner, chicken dinner. This concludes the dinner content.</p>
-    <%= link_to  'More on dinner', '#', class: 'btn btn-flat' %>
+    <div class='card col-3'>
+      <%= image_tag 'https://images.unsplash.com/photo-1552552492-9c335658343d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWxmYWpvcmVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60', alt: 'dinner image' %>
+      <div class='info'>
+      <h1>Alfajores</h1>
+      <p>A sandwich cookie with dulce de leche usually covered in chocolate. Very popular here, and in Argentina. Tons of good brands, hard to go wrong.</p>
+      <%= link_to  'Rastaman', 'https://rastaman.com.uy/', target: '_blank', class: 'btn btn-flat' %>
+      </div>
     </div>
-  </div>
 
-  <div class='card'>
-    <%= image_tag 'https://images.unsplash.com/photo-1552552492-9c335658343d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWxmYWpvcmVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60', alt: 'dinner image' %>
-    <div class='info'>
-    <h1>Alfajores</h1>
-    <p>You guessed it.. Bla bla bla dinnner, bla dinner bla. Winner winner, chicken dinner. This concludes the dinner content.</p>
-    <%= link_to  'More on dinner', '#', class: 'btn btn-flat' %>
+    <div class='card col-3'>
+      <%= image_tag 'https://images.unsplash.com/photo-1662628325105-abdc437c2903?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80', alt: 'mate image' %>
+      <div class='info'>
+      <h1>Mate</h1>
+      <p>I still prefer my coffee over mate for sure, but I do like a mate every now and then in the afternoon.</p>
+      <%= link_to  'Canarias', 'https://canarias.com.uy/', target: '_blank', class: 'btn btn-flat' %>
+      </div>
+    </div>
+
+    <div class='card col-3'>
+      <%= image_tag 'https://images.unsplash.com/photo-1543773495-2cd9248a5bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN3ZWV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', alt: 'dinner image' %>
+      <div class='info'>
+      <h1>Masitas</h1>
+      <p>Basically sweet little treats. Usually very rich, and most of which have dulce de leche.</p>
+      <%= link_to  'No favorite yet', '#', class: 'btn btn-flat' %>
+      </div>
+    </div>
+
+    <div class='card col-3'>
+      <%= image_tag 'https://images.unsplash.com/photo-1579887829494-5b736888265a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9rZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', alt: 'poke image' %>
+      <div class='info'>
+      <h1>Poke</h1>
+      <p>Not Uruguayan, but it's decently popular here and good anyways. It's something I have regularly, and anything seafood here is pretty fresh.</p>
+      <%= link_to  'Kona Poke', 'https://kona.com.uy/', target: '_blank', class: 'btn btn-flat' %>
+      </div>
     </div>
   </div>
 </div>
