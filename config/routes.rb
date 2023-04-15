@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'inquiries/create'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
   root "pages#home"
+
+  resources :inquiries, only: :create
 end

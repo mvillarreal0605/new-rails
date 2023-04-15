@@ -1,0 +1,3 @@
+<% flash.each do |type, msg| %>
+  <div><%= render partial: "shared/flashes/#{type}", locals: { msg: } %></div>
+<% end %>
