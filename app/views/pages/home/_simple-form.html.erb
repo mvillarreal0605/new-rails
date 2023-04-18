@@ -1,8 +1,7 @@
-<div class='row d-flex justify-content-center'>
+<div class='row d-flex justify-content-center' data-controller='inquiry-form'>
   <div class='col-4'>
     <%= simple_form_for @inquiry, html: { class:'needs-validation' } do |f| %>
-      <%= f.input :first_name, required: true, class: 'form-control' %>
-      <div class="invalid-feedback">Please provide a valid city.</div>
+      <%= f.input :first_name, required: true %>
       <%= f.input :last_name, required: true %>
       <%= f.input :interest, required: true, collection: Inquiry.interests.keys %>
       <%= f.input :email, required: true %>

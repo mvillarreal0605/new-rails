@@ -31,3 +31,22 @@
 
 en:
   hello: "Hello world"
+  simple_form:
+    labels:
+      inquiry:
+        first_name: 'First name'
+        last_name: 'Last name'
+        interest: 'Inquiry reason'
+        email:  'Email'
+        message: 'Message'
+    hints:
+      inquiry:
+        first_name: 'What your mom named you'
+    placeholders:
+      inquiry:
+        first_name: 'Larry'
+        last_name: 'David'
+        email:  'larrydavid@example.com'
+        message: 'Anything you want to share goes here..'
+    include_blanks:
+    prompts:
