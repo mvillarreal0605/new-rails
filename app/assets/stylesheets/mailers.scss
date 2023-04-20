@@ -1,0 +1,28 @@
+.btn-flat {
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: #05668D;
+  transition: background 0.3s ease;
+  margin: 0px 4px 0px;
+}
+
+.btn-flat:hover {
+  background: #427AA1;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Work Sans', 'Helvetica', 'sans-serif';;
+  color: #2d4059;
+}
+
+.message {
+  max-width: 500px;
+  text-align: left;
+  font-size: 16px;
+}
