@@ -3,6 +3,8 @@ class InquiriesController < ApplicationController
     @inquiry = Inquiry.new(inquiry_params)
 
     if @inquiry.save
+      InquiryMailer.send_confirmation(@inquiry).deliver_now
+      # InquiryMailer.receive_notification(@inquiry).deliver_now
       flash[:notice] ='Your inquiry was reveived. Thank you!'
     else
       flash[:alert] = 'Oops, something went wrong...'

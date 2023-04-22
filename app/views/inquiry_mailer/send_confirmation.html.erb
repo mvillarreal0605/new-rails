@@ -1,17 +1,19 @@
 <%= stylesheet_link_tag 'mailers', media: 'all' %>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
-</style>
 
-
-<div class="white-card">
-  <center><%= email_image_tag('logo.png', id: 'mailer-font-logo', alt: 'logo') %></center>
-  <br>
-  <center>
-    <div class='message'>
-      <p>Thank you for reaching out!</p>
-      <p>This is an automated email to let you know that we have received your inqiry for New Rails. We are excited to get in touch, and a teammember will be reaching out soon!</p>
-    </div>
-  </center>
-  <br>
-</div>
+<body>
+  <table class="wrapper">
+    <tr>
+      <td class="content">
+        <center><%= email_image_tag('logo.png', class: 'mailer-logo', alt: 'logo') %></center>
+        <br>
+        <br>
+        <center>
+          <div class='message'>
+            <p>Thank you for reaching out!</p>
+            <p>This is an automated email to let you know that we have received your inqiry for New Rails. We are excited to get in touch, and a teammember will be reaching out soon!</p>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>

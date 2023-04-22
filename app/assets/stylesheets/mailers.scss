@@ -1,24 +1,26 @@
-.btn-flat {
-  color: white;
-  padding: 12px 24px;
-  border-radius: 4px;
-  background: #05668D;
-  transition: background 0.3s ease;
-  margin: 0px 4px 0px;
-}
-
-.btn-flat:hover {
-  background: #427AA1;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
+@import 'config/index';
+@import 'bootstrap';
+@import 'components/logos';
 
 body {
-  font-family: 'Work Sans', 'Helvetica', 'sans-serif';;
-  color: #2d4059;
+  background-color: #f2f2f2;
+}
+
+table.wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+td.content {
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  td.content {
+    padding: 20px;
+  }
 }
 
 .message {
